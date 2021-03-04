@@ -105,7 +105,7 @@ def view(date):
     return render_template('day.html',
                            entry_date=date_result['entry_date'],
                            pretty_date=pretty_date,
-                           ood_results=food_results,
+                           food_results=food_results,
                            log_results=log_results,
                            totals=totals)
 
