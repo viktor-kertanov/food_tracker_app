@@ -83,10 +83,10 @@ def view(date):
     food.calories
     from 
     log_date
-    join
+    left join
     food_date on 
     food_date.log_date_id = log_date.id
-    join food on
+    left join food on
     food.id = food_date.food_id
     where log_date.entry_date = ?""", [date])
     log_results = log_cur.fetchall()
